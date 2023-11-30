@@ -65,6 +65,11 @@ fun main() {
                 println("나눗셈 결과 ${num} 입니다.")
             }
 
+            else {
+                println("계산기를 실행할 수 없습니다.")
+                break
+            }
+
         }
         else {
             i--
