@@ -9,19 +9,23 @@ class Calculator {
         num1 = _num1
         num2 = _num2
     }
-    fun addOperation(AddOperation(), num1, num2): Int {
-        return add
+    fun addOperation(): Int {
+        result = AddOperation(num1, num2)
+        return result
     }
 
-    fun subtractOperation(num1, num2): Int {
-        return SubtractOpeation()
+    fun subtractOperation(): Int {
+        result = SubtractOpeation(num1, num2)
+        return result
     }
 
     fun multiplyOperation(): Int {
-        return MultiplyOperation()
+        result = MultiplyOperation(num1, num2)
+        return result
     }
 
     fun divideOperation(): Int {
-        return DivideOperation()
+        result = DivideOperation(num1, num2)
+        return result
     }
 }
