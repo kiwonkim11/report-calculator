@@ -1,31 +1,19 @@
 package com.example.calculator
 
 class Calculator {
-    var num1 = 0
-    var num2 = 0
-    var result = 0
-
-    constructor(_num1: Int, _num2: Int) {
-        num1 = _num1
-        num2 = _num2
-    }
-    fun addOperation(): Int {
-        result = AddOperation(num1, num2)
-        return result
+    fun addOperation (oper: AddOperation, num1: Int, num2: Int): Double {
+        return oper.operate(num1, num2)
     }
 
-    fun subtractOperation(): Int {
-        result = SubtractOpeation(num1, num2)
-        return result
+    fun subOperation (oper: SubstractOpeation, num1: Int, num2: Int): Double {
+        return oper.operate(num1, num2)
     }
 
-    fun multiplyOperation(): Int {
-        result = MultiplyOperation(num1, num2)
-        return result
+    fun mulOperation (oper: MultiplyOperation, num1: Int, num2: Int): Double {
+        return oper.operate(num1, num2)
     }
 
-    fun divideOperation(): Int {
-        result = DivideOperation(num1, num2)
-        return result
+    fun divOperation (oper: DivideOperation, num1: Int, num2: Int): Double {
+        return oper.operate(num1, num2)
     }
 }
